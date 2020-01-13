@@ -12,8 +12,8 @@ body {
 
 header .top {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
   height: 2.5rem;
   border-bottom: 1px solid #eaeaea;
   color: #717171;
@@ -21,10 +21,18 @@ header .top {
   line-height: 1;
 }
 
+.top .wrap {
+  width: 83%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .top .tool {
   font-size: 0.75rem;
   position: relative;
-  /* padding-right: 0.8rem; */
+}
+
+.top .tool:not(:last-child) {
   margin-right: 1.1rem;
 }
 
@@ -36,7 +44,7 @@ header .top {
   transform: translateY(-50%);
   width: 1px;
   height: 8px;
-  background: #ddd;
+  background-color: #ddd;
 }
 
 .top .cart-count {
@@ -80,4 +88,67 @@ header .menu {
   background-size: cover;
   background-position: center;
   background-image: url('./data/banner/1.png');
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+}
+
+section:last-child {
+  margin-bottom: 5rem;
+}
+
+section .title {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+section .goods-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.goods .badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: white;
+  font-weight: 900;
+  background-color: #333;
+  line-height: 1;
+  padding: 4px 5px;
+  border-radius: 4px;
+}
+
+.goods img {
+  width: calc(25% - 1rem);
+}
+
+.goods .info {
+  font-size: 1.02rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+.goods .price {
+  font-size: 1.02rem;
+  font-weight: 700;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 }

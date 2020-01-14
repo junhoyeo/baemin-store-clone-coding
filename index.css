@@ -93,11 +93,13 @@ header #menu {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
   margin-top: 5rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   width: 83%;
@@ -123,6 +125,7 @@ section .goods-list {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 284.406px;
   position: relative;
 }
 
@@ -136,7 +139,6 @@ section .goods-list {
   left: 0.5rem;
   color: white;
   font-weight: 900;
-  background-color: #333;
   line-height: 1;
   padding: 4px 5px;
   border-radius: 4px;

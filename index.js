@@ -26,6 +26,32 @@ const data = {
         badge: 'BEST',
       },
     ],
+    new: [
+      {
+        name: '메모잇. 진짜 까먹지 말자',
+        price: 1500,
+        image: './data/goods/246.png',
+        badge: 'NEW',
+      },
+      {
+        name: '빗 있어?',
+        price: 1500,
+        image: './data/goods/239.png',
+        badge: 'NEW',
+      },
+      {
+        name: '헤어롤 있어?',
+        price: 1500,
+        image: './data/goods/238.png',
+        badge: 'NEW',
+      },
+      {
+        name: '거울 있어?',
+        price: 1500,
+        image: './data/goods/240.png',
+        badge: 'NEW',
+      },
+    ],
   },
 };
 

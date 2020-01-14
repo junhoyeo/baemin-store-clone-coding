@@ -8,22 +8,38 @@
  */
 
 /**
+ * @param {string} [badge='']
+ */
+const renderBadge = (badge) => {
+  if (!badge)
+    return '';
+  const badgeElement = document.createElement('span');
+  badgeElement.className = 'badge';
+  badgeElement.style.backgroundColor = {
+    'BEST': '#333',
+    'NEW': '#29C1BC',
+    'SALE': '#ff6350',
+  }[badge];
+  badgeElement.innerText = badge;
+
+  return badgeElement.outerHTML;
+};
+
+/**
  * @param {Goods} goods - Goods object to render
  */
-function renderGoods({
+const renderGoods = ({
   name,
   price,
   image,
   badge = '',
   sale = 0,
-}) {
+}) => {
   const goods = document.createElement('div');
   goods.className = 'goods';
   goods.innerHTML = `
     <div class="goods">
-    <span class="badge">
-      BEST
-    </span>
+    ${renderBadge(badge)}
     <img
       src="${image}"
     />
@@ -38,4 +54,4 @@ function renderGoods({
   `;
 
   return goods;
-}
+};

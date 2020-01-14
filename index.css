@@ -69,13 +69,13 @@ header .main {
   margin: 1rem 0;
 }
 
-header .menu {
+header #menu {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #eaeaea;
 }
 
-.menu .category {
+#menu .category {
   cursor: pointer;
   padding: 1rem 1.1rem;
   font-size: 0.98rem;

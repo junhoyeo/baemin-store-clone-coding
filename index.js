@@ -29,7 +29,7 @@ const data = {
   },
 };
 
-window.onload = () => {
+const renderGoodsList = () => {
   Object.keys(data.lists).forEach((key, _) => {
     const listElement = document.getElementById(`goods-list-${key}`);
 
@@ -39,4 +39,9 @@ window.onload = () => {
       );
     });
   });
+};
+
+window.onload = () => {
+  renderMenu();
+  renderGoodsList();
 };

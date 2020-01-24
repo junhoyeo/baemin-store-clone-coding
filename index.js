@@ -71,8 +71,18 @@ const data = {
       },
       {
         name: '매거진F No.11 Bean',
-        price: 21000,
+        price: 15000,
         image: './data/goods/235.jpg',
+        sale: 10,
+        badge: 'NEW',
+      },
+    ],
+    sale: [
+      {
+        name: '매거진F No.11 Bean',
+        price: 15000,
+        image: './data/goods/235.jpg',
+        sale: 10,
         badge: 'NEW',
       },
     ],

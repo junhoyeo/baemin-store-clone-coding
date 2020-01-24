@@ -8,7 +8,7 @@
  */
 
 /**
- * @param {string} [badge='']
+ * @param {string} badge
  */
 const renderBadge = (badge) => {
   if (!badge)
@@ -26,6 +26,28 @@ const renderBadge = (badge) => {
 };
 
 /**
+ * @param {number} sale
+ */
+const renderSale = (sale) => {
+  return `
+    <span class="sale">
+      ${sale}%
+    </span>
+  `;
+};
+
+/**
+ * @param {number} discount
+ */
+const renderDiscount = (discount) => {
+  return `
+    <span class="discount">
+      ${discount.toLocaleString('ko')}원
+    </span>
+  `;
+};
+
+/**
  * @param {Goods} goods - Goods object to render
  */
 const renderGoods = ({
@@ -36,6 +58,10 @@ const renderGoods = ({
   sale = 0,
 }) => {
   const goods = document.createElement('div');
+
+  const discountAmount = price * (sale / 100);
+  const currentPrice = sale ? price - discountAmount : price;
+
   goods.className = 'goods';
   goods.innerHTML = `
     <div class="goods">
@@ -44,11 +70,13 @@ const renderGoods = ({
       src="${image}"
     />
     <div class="info">
+      ${sale ? renderSale(sale) : ''}
       <span class="name">
         ${name}
       </span>
+      ${sale ? renderDiscount(discountAmount) : ''}
       <span class="price">
-        ${price.toLocaleString('ko')}원
+        ${currentPrice.toLocaleString('ko')}원
       </span>
     </div>
   `;

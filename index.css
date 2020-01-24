@@ -164,3 +164,36 @@ section .goods-list {
   font-weight: 700;
   font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 }
+
+.recommend-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommend {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.recommend img {
+  margin-right: 2rem;
+  width: 872px;
+  height: 295px;
+}
+
+.recommend .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommend .title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+
+.recommend .desc {
+  margin: 0;
+}

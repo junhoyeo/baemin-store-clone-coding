@@ -28,6 +28,12 @@ const data = {
     ],
     new: [
       {
+        name: '잘나가요 세트',
+        price: 15000,
+        image: './data/goods/247.png',
+        badge: 'new',
+      },
+      {
         name: '메모잇. 진짜 까먹지 말자',
         price: 1500,
         image: './data/goods/246.png',
@@ -49,6 +55,24 @@ const data = {
         name: '거울 있어?',
         price: 1500,
         image: './data/goods/240.png',
+        badge: 'NEW',
+      },
+      {
+        name: 'ㅋㅋ슬리퍼 블랙',
+        price: 21000,
+        image: './data/goods/236.png',
+        badge: 'NEW',
+      },
+      {
+        name: 'ㅋㅋ슬리퍼 화이트',
+        price: 21000,
+        image: './data/goods/237.png',
+        badge: 'NEW',
+      },
+      {
+        name: '매거진F No.11 Bean',
+        price: 21000,
+        image: './data/goods/235.jpg',
         badge: 'NEW',
       },
     ],

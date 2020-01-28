@@ -23,6 +23,7 @@ header .top {
 
 .top .wrap {
   width: 83%;
+  max-width: 1200px;
   display: flex;
   justify-content: flex-end;
 }
@@ -53,7 +54,15 @@ header .top {
   color: #29C1BC;
 }
 
+header .main-wrap {
+  display: flex;
+  margin: 0 auto;
+  width: 83%;
+  max-width: 1200px;
+}
+
 header .main {
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +71,7 @@ header .main {
 
 .main .search {
   position: absolute;
-  right: 7.5rem;
+  right: 0;
   top: 35%;
   display: flex;
   align-items: center;
@@ -106,6 +115,29 @@ header #menu {
   background-position: center;
   background-image: url('./data/banner/1.png');
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.carousel .remote {
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin: 2.5rem 0;
+  display: flex;
+}
+
+.remote span.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #b5b5b5;
+  border-radius: 5px;
+  margin: 0 0.38rem;
+}
+
+.remote span.circle.current {
+  background-color: white;
 }
 
 main {
@@ -120,6 +152,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 83%;
+  max-width: 1200px;
 }
 
 section:last-child {
